@@ -13,9 +13,6 @@ READ THE INSTRUCTIONS SPECIFIC TO YOUR MACHINE TYPE IN RESPECTIVE FOLDER
 <<<<<<< HEAD
 ```
 git config --system -e
-=======
-```git config --system -e
->>>>>>> e6c1aacf6c9bb8c4dee26b947c5b3037ab80f046
 ```
 0. Setup the .ssh and other private home folders so that you can clone this repo and use that for symlinking.
 0. Clone this repo
