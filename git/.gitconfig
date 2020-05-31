@@ -1,0 +1,20 @@
+[include]
+  path = ~/.gitconfig.global
+[core]
+  excludesfile = ~/.gitignore.global
+  ignorecase = true
+[push]
+  default = simple
+[merge]
+  tool = diffmerge
+[mergetool "diffmerge"]
+  cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = true
+[filter "lfs"]
+  smudge = git-lfs smudge -- %f
+  required = true
+  clean = git-lfs clean -- %f
+  process = git-lfs filter-process
+[alias]
+  lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  create-pull-request = !sh -c 'stash pull-request $0'
