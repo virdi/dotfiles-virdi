@@ -10,7 +10,6 @@ READ THE INSTRUCTIONS SPECIFIC TO YOUR MACHINE TYPE IN RESPECTIVE FOLDER
 0. Run spectacle so that its settings can be applied in the next step.
 0. Go to `macos/configure` or similar and run the scripts as needed. `macos.sh` might be the first one if you are running for macOS. Per user.
 0. Set up the default editor for git (to edit configs, commit messages, etc.)
-<<<<<<< HEAD
 ```
 git config --system -e
 ```
