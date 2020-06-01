@@ -1,7 +1,7 @@
 [include]
   path = ~/.gitconfig.global
 [core]
-  excludesfile = ~/.gitignore.global
+	excludesfile = /Users/virdi/.gitignore.global
   ignorecase = true
 [push]
   default = simple
@@ -18,3 +18,14 @@
 [alias]
   lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   create-pull-request = !sh -c 'stash pull-request $0'
+[user]
+	name = Makhan Virdi
+	email = makhan.virdi@gmail.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/virdi/.stCommitMsg

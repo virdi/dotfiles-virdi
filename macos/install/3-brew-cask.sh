@@ -29,6 +29,7 @@ brewcaskapps=(
   metabase
   mullvadvpn
   mysqlworkbench
+  notion
   #openemu
   osxfuse
   plex

@@ -2,6 +2,8 @@
 set -U fish_prompt_pwd_dir_length 0
 set -Ux EDITOR "atom --wait"
 
+# Start SSH Agent using functions/fish_ssh_agent.fish
+fish_ssh_agent
 
 if test -d ~/.local/fish
   for f in ~/.local/fish/*.fish
@@ -31,3 +33,5 @@ status --is-interactive; and source (rbenv init -|psub)
 if test -d ~/Library/Preferences/org.dystroy.broot/launcher/fish/br
   source ~/Library/Preferences/org.dystroy.broot/launcher/fish/br
 end
+set -g fish_user_paths "/usr/local/opt/sqlite/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
