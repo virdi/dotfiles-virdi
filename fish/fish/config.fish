@@ -35,3 +35,8 @@ if test -d ~/Library/Preferences/org.dystroy.broot/launcher/fish/br
 end
 set -g fish_user_paths "/usr/local/opt/sqlite/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /usr/local/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
