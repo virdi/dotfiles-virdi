@@ -21,6 +21,7 @@
 [user]
 	name = Makhan Virdi
 	email = makhan.virdi@gmail.com
+	signingkey = D838E0B21397EA87
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
